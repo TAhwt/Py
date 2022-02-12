@@ -23,7 +23,7 @@ task 2
 значения которых больше предыдущего элемента
 '''
 my_list = [36, 20, 90, 5, 10, 8, 11, 60, 150, 1, 1, 2, 6, 9, 45]
-new_list = [el for el in my_list if el > my_list[my_list.index(el)-1]]
+new_list = [el for i, el in enumerate(my_list) if i > 0 and el > my_list[my_list.index(el) - 1]]
 print(new_list)
 '''
 task 3
